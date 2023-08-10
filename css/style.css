@@ -1,0 +1,152 @@
+h1 {
+font-size: 3rem;
+font-weight: bold;
+}
+
+h2 {
+font-size: 2rem;
+padding-left: 70px;
+padding-right: 70px;
+
+}
+
+.flexColumn {
+flex-direction: column;
+display: flex;
+padding: 10px;
+width: auto;
+margin: 0 2rem;
+text-align: center;
+
+}
+
+.flexRow {
+flex-direction: row;
+display: flex;
+align-items: center;
+}
+
+.player {
+border: 3px solid black;
+margin: 10px;
+height: 450px;
+width: 300px;
+text-align: center;
+
+}
+
+#cards {
+flex-direction: row;
+display: flex;
+align-items: center;
+flex-flow: wrap;
+
+}
+
+img {
+width: 60px;
+
+}
+
+
+
+}
+
+body {
+margin: 5%;
+
+
+}
+
+h2 {
+margin: 1rem 0;
+
+}
+
+
+#draw {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 50px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  margin: 10px;
+}
+
+#draw:hover {background-color: #3e8e41}
+
+#draw:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#war {
+font-size: 5rem;
+
+}
+
+.number {
+font-size: 8rem;
+font-weight: bold;
+
+
+}
+
+@media screen and (max-width: 1000px) {
+
+.flexRow {
+
+flex-flow: column;
+flex-wrap: wrap;
+justify-content: center;
+
+}
+
+#cards {
+
+justify-content: center;
+width: 5%;
+text-align: center;
+flex-wrap: wrap;
+flex-flow: column;
+
+}
+
+}
+
+.number img {
+height: 150px;
+width: auto;
+padding: 10px;
+
+}
+
+.suit {
+font-size: 5rem;
+
+
+}
+
+.flex {
+display: flex;
+justify-content: center;
+text-align: center;
+flex-wrap: wrap;
+
+}
+
+#gameBoard {
+flex-direction: column;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+margin: auto;
+}

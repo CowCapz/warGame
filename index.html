@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>War</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="./css/reset.css" rel="stylesheet" type="text/css"/>
+    <link href="./css/style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+
+    <div id="practice" style="font-size:2rem;"></div>
+    <div id="gameBoard" class="flex">
+      <div class="flexColumn">
+      <h1 id="war">War!</h1>
+      <h2 id="winner"></h2>
+      <div class="flexRow">
+        <h2>First Player has <span id="player1Count"></span> cards.</h2>
+        <h2>Second Player has <span id="player2Count"></span> cards.</h2>
+      </div> <!-- closing player card counts -->
+    </div> <!-- closing flexRow/top text -->
+
+    <div id="cards">
+    <div id="firstPlayer" class="flexColumn player">
+      <h1>First Player</h1>
+      <div id="firstPlayerNumber" class="number">
+      </div>
+      <div id="firstPlayerSuit" class="suit flex">
+      </div>
+    </div> <!-- closes first player -->
+
+
+    <h1 id="draw">Draw!</h1>
+
+
+    <div id="secondPlayer" class="flexColumn player">
+      <h1>Second Player</h1>
+      <div id="secondPlayerNumber" class="number">
+      </div>
+      <div id="secondPlayerSuit" class="suit flex">
+      </div>
+    </div> <!-- closes second player -->
+  </div>
+</div>
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+  </body>
+</html>
