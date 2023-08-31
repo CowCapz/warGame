@@ -10,36 +10,60 @@
   <body>
 
     <div id="practice" style="font-size:2rem;"></div>
+
     <div id="gameBoard" class="flex">
       <div class="flexColumn">
       <h1 id="war">War!</h1>
       <h2 id="winner"></h2>
       <div class="flexRow">
-        <h2>First Player has <span id="player1Count"></span> cards.</h2>
-        <h2>Second Player has <span id="player2Count"></span> cards.</h2>
+        <h2>Player has <span id="player1Count"></span> cards.</h2>
+        <h2>Computer has <span id="player2Count"></span> cards.</h2>
       </div> <!-- closing player card counts -->
     </div> <!-- closing flexRow/top text -->
 
     <div id="cards">
-    <div id="firstPlayer" class="flexColumn player">
-      <h1>First Player</h1>
-      <div id="firstPlayerNumber" class="number">
+
+    <div id="player" class="flexColumn player">
+      <h1>Player</h1>
+      <div id="playerNumber" class="number">
       </div>
-      <div id="firstPlayerSuit" class="suit flex">
+      <div id="playerSuit" class="suit flex">
       </div>
+      <h2 id="one" class="button hidden">Winner</h2>
     </div> <!-- closes first player -->
 
+    <div class="flexColumn">
+
+      <p id="compareDirections" class="hidden">Choose which player has the card that shows a greater amount.</p>
+      <p id="cardDirections" class="hidden">Jack = 11, Queen = 12, King = 13.</p>
+      <p id="addDirections" class="hidden">Add the card amounts together.</p>
+      <p id="multiplyDirections" class="hidden">Multiply the card amounts together.</p>
+      <p><span id="subtractDirections" class="hidden">Player One's card minus Player Two's card</span><span id="integerDirections" class="hidden">Black is positive. Red is negative</span></p>
+
+        <input class="hidden" id="playerAnswer" type="number" align="right" size="6">
+        <button class="hidden" id="submit">Check</button>
 
     <h1 id="draw">Draw!</h1>
 
+    <input class="hidden" value="answer"></input>
+  </div>
 
-    <div id="secondPlayer" class="flexColumn player">
-      <h1>Second Player</h1>
-      <div id="secondPlayerNumber" class="number">
+    <div id="computer" class="flexColumn player">
+      <h1>Computer</h1>
+      <div id="computerNumber" class="number">
       </div>
-      <div id="secondPlayerSuit" class="suit flex">
+      <div id="computerSuit" class="suit flex">
       </div>
+      <h2 id="two" class="button hidden">Winner</h2>
     </div> <!-- closes second player -->
+  </div>
+  <div id="mathButtons">
+    <h2 id="mathOptions" class="button">Math Options?</h2>
+      <div id="options" class="hidden">
+        <button id="compare">Compare</button><button id="arithmetic">Arithmetic</button>
+      </div>
+    <h2 id="math" class="hidden"><span id="add" class="button">ADD</span><span id="multiply" class="button">MULTIPLY</span><span id="subtract" class="button">SUBTRACT</span></h2>
+    <h2 id="integers" class="hidden">Integers?<span id="yes" class="button">YES</span><span id="no" class="button">NO</span></h2>
   </div>
 </div>
 
